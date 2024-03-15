@@ -1,31 +1,72 @@
 
+@keyframes popIn {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+        /* This helps the items render while not being visible to prevent "pop-in" */
+        transform: scale(0.001);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 body {
     font-size: 24px;
     color:white;
     text-shadow: .1em .1em .2em black;
-    background: url("../img/main-bg.png");
-    background-size:cover;
-    background-position: center;
-    
+    background-color: #000;
+
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+
+    animation: 1s ease-in-out 0s 1 popIn;
 }
 
-.container, .container:before {
+.container {
+    background: url("../img/main-bg.png");
+    background-size:cover;
+    background-position: center;
+
+    display: inline-flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.content, .content:before {
     display: inline-flex;
     position: fixed;
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
 }
+
+.animation-wrapper {
+    animation: 2s ease-out 0s 1 fadeIn;
+}
+
 /* 3D Transform CSS: https://polypane.app/css-3d-transform-examples/ */
 /* Polygon Generator: https://bennettfeely.com/clippy/ */
 
 #me {
+    width: 100%;
+
     text-align: center;
     font-size: .9em;
 }
@@ -169,11 +210,9 @@ body {
     margin-left:.3em;
 }
 
-
 /*
     Mobile CSS
 */
-
 @media (max-width : 620px ) {
     .shard {
         display: inline-flex;
