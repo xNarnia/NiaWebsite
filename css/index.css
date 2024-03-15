@@ -168,3 +168,29 @@ body {
     margin-top:.5em;
     margin-left:.3em;
 }
+
+
+/*
+    Mobile CSS
+*/
+
+@media (max-width : 600px ) {
+    .shard {
+        display: inline-flex;
+        width: 49%;
+        aspect-ratio: 5 / 3;
+    }
+
+    #me {
+        position: absolute;
+        top: 2em;
+    }
+
+    .container {
+        margin-top: 5em;
+    }
+
+    #c1, #c2, #c3, #c4, #c5, #c6 {
+        margin-top: 0em;
+    }
+}
