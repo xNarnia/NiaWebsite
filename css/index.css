@@ -1,0 +1,170 @@
+
+body {
+    font-size: 24px;
+    color:white;
+    text-shadow: .1em .1em .2em black;
+    background: url("../img/main-bg.png");
+    background-size:cover;
+    background-position: center;
+    
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container, .container:before {
+    display: inline-flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* 3D Transform CSS: https://polypane.app/css-3d-transform-examples/ */
+/* Polygon Generator: https://bennettfeely.com/clippy/ */
+
+#me {
+    text-align: center;
+    font-size: .9em;
+}
+
+#me > img {
+    width: 5em;
+    border-radius: 100%;
+    border: .25em #fff solid;
+    box-shadow: .1em .1em .5em 0 #000;
+}
+
+/* 
+    Shard 
+*/
+.shard, .shard:before {
+    display: inline-flex;
+    width:32.5%;
+    aspect-ratio: 5 / 3;
+}
+
+.shard:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    width:100%;
+
+    background-size: contain;
+    background-color: rgba(27, 1, 65, 0.8);
+    background-blend-mode: normal;
+    
+    -webkit-filter: blur(.15em);
+    filter: blur(.15em);
+}
+
+.shard {
+    background: rgb(255,255,255);
+    background: linear-gradient(45deg, rgba(116, 66, 150, 0.4) 0%, rgba(0,0,0,0.8) 100%);
+
+    text-align: center;
+    align-items: center;
+
+    opacity: 0.97;
+
+    /* Weird fix to allow 3D transitions not to mess up the shadows when doing the hover animation */
+    transform:
+        rotate3d(.001,-.001,0,.001deg)
+        rotate(.001deg);
+        
+    transition: transform .3s ease 0s;
+    &:hover {
+        transform:
+        rotate3d(.5,-.866,0,10deg)
+        rotate(2deg);
+        background: rgba(40, 32, 52, 0.9);
+    }
+}
+
+.shard:hover {
+    cursor: pointer;
+}
+
+.shard > p {
+    width: 100%;
+    display: flexbox;
+}
+
+/* 
+    Content 
+*/
+
+#c1, #c1:before {
+    clip-path: polygon(65% 10%, 94% 25%, 98% 95%, 39% 90%, 17% 53%, 6% 0, 35% 3%);
+    margin-top:-.8em;
+    margin-left:-.3em;
+}
+
+#c1:before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: 70%;
+}
+
+#c1 > p {
+    padding-left: 15%;
+}
+
+#c1{
+    margin-top: 1.5em;
+}
+
+#c2, #c2:before {
+    clip-path: polygon(44% 0, 75% 13%, 100% 27%, 89% 73%, 65% 89%, 31% 99%, 0 66%, 16% 11%);
+    margin-top:-.8em;
+    margin-left:-.1em;
+}
+
+#c2:before {
+    background-position: center;
+    background-position-x: .5em;
+}
+
+#c2{
+    margin-top: -3.5em;
+}
+
+#c3, #c3:before {
+    clip-path: polygon(56% 2%, 84% 13%, 100% 27%, 90% 78%, 62% 91%, 8% 100%, 4% 51%, 18% 10%);
+    margin-top:-.7em;
+    margin-left: .1em;
+}
+
+#c3:before {
+    background-position: center;
+    background-position-x: -.5em;
+}
+
+#c3{
+    margin-top: 1.5em;
+}
+
+#c4, #c4:before {
+    clip-path: polygon(57% 4%, 73% 17%, 97% 29%, 83% 76%, 52% 97%, 3% 99%, 9% 39%, 28% 13%);
+    margin-top:.7em;
+    margin-left:-.4em;
+}
+
+#c5, #c5:before {
+    clip-path: polygon(58% 11%, 78% 3%, 97% 29%, 78% 79%, 52% 97%, 12% 84%, 3% 31%, 31% 13%);
+    margin-top:.8em;
+    margin-left:-.1em;
+}
+
+#c5 {
+    margin-top: 5em;
+}
+
+#c6, #c6:before {
+    clip-path: polygon(51% 0, 77% 8%, 91% 35%, 95% 96%, 46% 100%, 15% 88%, 2% 52%, 22% 13%);
+    margin-top:.5em;
+    margin-left:.3em;
+}
