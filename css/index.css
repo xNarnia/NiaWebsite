@@ -174,7 +174,7 @@ body {
     Mobile CSS
 */
 
-@media (max-width : 600px ) {
+@media (max-width : 820px ) {
     .shard {
         display: inline-flex;
         width: 49%;
@@ -187,7 +187,8 @@ body {
     }
 
     .container {
-        margin-top: 5em;
+        margin-top: -2em;
+        height: 50%;
     }
 
     #c1, #c2, #c3, #c4, #c5, #c6 {
