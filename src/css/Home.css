@@ -1,0 +1,108 @@
+
+@keyframes popIn {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+        /* This helps the items render while not being visible to prevent "pop-in" */
+        transform: scale(0.001);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+body {
+    font-size: 24px;
+    color:white;
+    text-shadow: .1em .1em .2em black;
+    background-color: #000;
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* buggy right now
+    animation: 1s ease-in-out 0s 1 popIn;
+    */
+}
+
+a:link,
+a:visited {
+    color: #FFF;
+}
+a:hover,
+a:active {
+    color: #dfcbff;
+}
+
+.home {
+    background: url("../img/main-bg.png");
+    background-size:cover;
+    background-position: center;
+
+    display: inline-flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    
+    box-shadow: inset 0 0 5em 3em #000123;
+}
+
+.content, .content:before {
+    display: inline-flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.animation-wrapper {
+    animation: .75s ease-out 0s 1 fadeIn;
+}
+
+/* 3D Transform CSS: https://polypane.app/css-3d-transform-examples/ */
+
+#me {
+    width: 100%;
+
+    text-align: center;
+    font-size: .9em;
+    margin-top: 2em;
+}
+
+#me > img {
+    width: 5em;
+    border-radius: 100%;
+    border: .25em #fff solid;
+    box-shadow: .1em .1em .5em 0 #000;
+}
+
+/*
+    Mobile CSS
+*/
+@media (max-width : 620px ) {
+    #me {
+        position: absolute;
+        top: 2em;
+        margin-top: 0;
+    }
+
+    .content {
+        margin-top: 4em;
+        height: 50%;
+    }
+}

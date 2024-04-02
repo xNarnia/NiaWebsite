@@ -1,0 +1,81 @@
+/* 
+    Shard 
+*/
+.shard, .shard-shadow {
+    display: inline-flex;
+    width:32.5%;
+    aspect-ratio: 5 / 3;
+}
+
+.shard-shadow {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    width:100%;
+
+    background-size: contain;
+    background-color: rgba(27, 1, 65, 0.8);
+    background-blend-mode: normal;
+    
+    -webkit-filter: blur(.15em);
+    filter: blur(.15em);
+
+    margin: -.5em 0 0 -.3em;
+}
+
+.shard, .shard-shadow {
+
+    text-align: center;
+    align-items: center;
+
+    opacity: 0.97;
+
+}
+
+.shard {
+    background: linear-gradient(45deg, rgba(116, 66, 150, 0.4) 0%, rgba(0,0,0,0.8) 100%);
+    
+    /* Weird fix to allow 3D transitions not to mess up the shadows when doing the hover animation */
+    transform:
+        rotate3d(.001,-.001,0,.001deg)
+        rotate(.001deg);
+
+    transition: transform .3s ease 0s;
+    &:hover {
+        transform:
+        rotate3d(.5,-.866,0,10deg)
+        rotate(2deg);
+        background: rgba(40, 32, 52, 0.9);
+    }
+}
+
+.shard:hover {
+    cursor: pointer;
+}
+
+.shard > p {
+    width: 100%;
+    display: flexbox;
+}
+
+.shard-spacer {
+    display: inline-flex;
+    width: 100%;
+}
+
+/*
+    Mobile CSS
+*/
+@media (max-width : 620px ) {
+    .shard {
+        display: inline-flex;
+        width: 49%;
+        aspect-ratio: 5 / 3;
+        margin:0 !important;
+    }
+
+    .shard-spacer {
+        display: none;
+    }
+}
