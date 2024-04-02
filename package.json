@@ -2,8 +2,11 @@
   "name": "portfolio-website",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://xnarnia.github.io/Portfolio-Website/",
   "type": "module",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
