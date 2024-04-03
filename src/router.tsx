@@ -15,54 +15,54 @@ const placeholderRootPath = "/Portfolio-Website";
 export const routes = [
   {
     name: "Home",
-    path: `${placeholderRootPath}/`,
+    path: '/',
     element: <Home />,
     errorElement: <Page404 />
   },
   {
     name: "Portfolio",
-    path: `${placeholderRootPath}/Portfolio`,
+    path: '/Portfolio',
     element: <Portfolio />,
     errorElement: <Page404 />
   },
   {
     name: "Resume",
-    path: `${placeholderRootPath}/Resume`,
+    path: '/Resume',
     element: <Resume />,
-    errorElement: <Page404 /> 
+    errorElement: <Page404 />
   },
   {
     name: "Github",
-    path: `${placeholderRootPath}/Github`,
+    path: '/Github',
     element: <Github />,
-    errorElement: <Page404 /> 
+    errorElement: <Page404 />
   },
   {
     name: "Documentation",
-    path: `${placeholderRootPath}/Documentation`,
+    path: '/Documentation',
     element: <Documentation />,
-    errorElement: <Page404 /> 
+    errorElement: <Page404 />
   },
   {
     name: "Socials",
-    path: `${placeholderRootPath}/Socials`,
+    path: '/Socials',
     element: <Socials />,
-    errorElement: <Page404 /> 
+    errorElement: <Page404 />
   },
   {
     name: "About",
-    path: `${placeholderRootPath}/About`,
+    path: '/About',
     element: <About />,
-    errorElement: <Page404 /> 
+    errorElement: <Page404 />
   }
 ];
 
 export const router = createBrowserRouter([{
-  path: '/',
+  path: `${placeholderRootPath}/`,
   element: <Root />,
   children: routes.map((route) => ({
     index: route.path === '/',
-    path: route.path === '/' ? undefined : route.path,
+    path: route.path === '/' ? undefined : `${placeholderRootPath}${route.path}`,
     element: route.element,
   })),
 }]);
