@@ -10,46 +10,48 @@ import Socials from "./routes/Socials.tsx";
 import About from "./routes/About.tsx";
 import Root from "./routes/Root.tsx";
 
+const placeholderRootPath = "/Portfolio-Website";
+
 export const routes = [
   {
     name: "Home",
-    path: "/",
+    path: `${placeholderRootPath}/`,
     element: <Home />,
     errorElement: <Page404 />
   },
   {
     name: "Portfolio",
-    path: "/Portfolio",
+    path: `${placeholderRootPath}/Portfolio`,
     element: <Portfolio />,
     errorElement: <Page404 />
   },
   {
     name: "Resume",
-    path: "/Resume",
+    path: `${placeholderRootPath}/Resume`,
     element: <Resume />,
     errorElement: <Page404 /> 
   },
   {
     name: "Github",
-    path: "/Github",
+    path: `${placeholderRootPath}/Github`,
     element: <Github />,
     errorElement: <Page404 /> 
   },
   {
     name: "Documentation",
-    path: "/Documentation",
+    path: `${placeholderRootPath}/Documentation`,
     element: <Documentation />,
     errorElement: <Page404 /> 
   },
   {
     name: "Socials",
-    path: "/Socials",
+    path: `${placeholderRootPath}/Socials`,
     element: <Socials />,
     errorElement: <Page404 /> 
   },
   {
     name: "About",
-    path: "/About",
+    path: `${placeholderRootPath}/About`,
     element: <About />,
     errorElement: <Page404 /> 
   }
