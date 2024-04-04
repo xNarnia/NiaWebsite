@@ -2,13 +2,16 @@ import { Shard, ShardSpacer } from '../components/shard';
 import Photo from '../img/photo.jpg'
 import '../css/particles.css'
 import '../css/Home.css'
+import { NavbarHiddenContext } from '../app';
+import { useContext } from 'react';
+import { Avatar } from '../components/avatar';
 
 function Home() {
+  const { navbarHidden, setNavbarHidden } = useContext(NavbarHiddenContext);
+  setNavbarHidden(true);
+
   return (
     <>
-      <script>
-        document.getElementsByClassName("navbar")[0].classList.add("hidden");
-      </script>
       <div className="home">
         <div className="animation-wrapper">
               <div className="particle particle-1"></div>
@@ -17,7 +20,7 @@ function Home() {
               <div className="particle particle-4"></div>
           </div>
           <div id="me">
-              <img src={Photo} /><br />
+              <Avatar /><br />
               Nia<br />Software Engineer<br />Software Test Engineer
           </div>
           <div className="content">

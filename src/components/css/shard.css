@@ -41,7 +41,7 @@
         rotate3d(.001,-.001,0,.001deg)
         rotate(.001deg);
 
-    transition: transform .3s ease 0s;
+    transition: transform .3s ease 0s, width 500ms ease-in;
     &:hover {
         transform:
         rotate3d(.5,-.866,0,10deg)
@@ -65,7 +65,7 @@
 }
 
 /*
-    Mobile CSS
+    Responsive CSS
 */
 @media (max-width : 620px ) {
     .shard {
@@ -77,5 +77,17 @@
 
     .shard-spacer {
         display: none;
+    }
+}
+
+@media (min-aspect-ratio: 5/3) {
+    .shard {
+        width:25%;
+    }
+}
+
+@media (min-aspect-ratio: 7/3) {
+    .shard {
+        width:20%;
     }
 }

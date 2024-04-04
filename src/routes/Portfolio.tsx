@@ -1,15 +1,7 @@
-import '../css/bootstrap.min.css'
-import '../css/common.css'
+import NavbarRoute from './templates/NavbarRoute';
 
-function Portfolio() {
-  return (
-    <>
-      <script>
-          document.getElementsByClassName("navbar")[0].classList.remove("hidden");
-        </script>
-      Portfolio
-    </>
-  )
-}
+const Portfolio = () => <NavbarRoute Element={
+  <>Portfolio</>
+} />
 
 export default Portfolio

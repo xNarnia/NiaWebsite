@@ -1,11 +1,7 @@
-function Resume() {
-  return (
-    <>
-        <div>
-            Resume
-        </div>
-    </>
-  )
-}
+import NavbarRoute from './templates/NavbarRoute';
+
+const Resume = () => <NavbarRoute Element={
+  <>Resume</>
+} />
 
 export default Resume

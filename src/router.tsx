@@ -9,8 +9,7 @@ import Documentation from "./routes/Documentation.tsx";
 import Socials from "./routes/Socials.tsx";
 import About from "./routes/About.tsx";
 import Root from "./routes/Root.tsx";
-
-const placeholderRootPath = "/Portfolio-Website";
+import config from "./appconfig.json"
 
 export const routes = [
   {
@@ -58,11 +57,11 @@ export const routes = [
 ];
 
 export const router = createBrowserRouter([{
-  path: `${placeholderRootPath}/`,
+  path: `${config.baseUrl}`,
   element: <Root />,
   children: routes.map((route) => ({
     index: route.path === '/',
-    path: route.path === '/' ? undefined : `${placeholderRootPath}${route.path}`,
+    path: route.path === '/' ? undefined : `${config.baseUrl}${route.path}`,
     element: route.element,
   })),
 }]);
