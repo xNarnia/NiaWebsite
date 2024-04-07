@@ -10,47 +10,55 @@ import Socials from "./routes/Socials.tsx";
 import About from "./routes/About.tsx";
 import Root from "./routes/Root.tsx";
 import config from "./appconfig.json"
+import * as Icons from 'react-bootstrap-icons'
 
 export const routes = [
   {
     name: "Home",
     path: '/',
+    icon: <Icons.HouseFill />,
     element: <Home />,
     errorElement: <Page404 />
   },
   {
     name: "Portfolio",
     path: '/Portfolio',
+    icon: <Icons.FolderFill />,
     element: <Portfolio />,
     errorElement: <Page404 />
   },
   {
     name: "Resume",
     path: '/Resume',
+    icon: <Icons.JournalText />,
     element: <Resume />,
     errorElement: <Page404 />
   },
   {
     name: "Github",
     path: '/Github',
+    icon: <Icons.Github />,
     element: <Github />,
     errorElement: <Page404 />
   },
   {
-    name: "Documentation",
+    name: "Docs",
     path: '/Documentation',
+    icon: <Icons.ArchiveFill />,
     element: <Documentation />,
     errorElement: <Page404 />
   },
   {
     name: "Socials",
     path: '/Socials',
+    icon: <Icons.EnvelopePaperHeartFill />,
     element: <Socials />,
     errorElement: <Page404 />
   },
   {
     name: "About",
     path: '/About',
+    icon: <Icons.PersonFill />,
     element: <About />,
     errorElement: <Page404 />
   }

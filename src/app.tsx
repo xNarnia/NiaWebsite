@@ -2,7 +2,8 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import './css/bootstrap.min.css'
-import './css/common.css'
+import './css/theme.css'
+import './css/bootstrap-navbar.css'
 import { router } from './router'
 import ReactDOM from 'react-dom/client'
 import React, { useState } from 'react'
@@ -17,6 +18,7 @@ import React, { useState } from 'react'
   -- ./css/*        -> Contains CSS for various pages. 
                        -- common.css contains css that span across all pages 
 */
+
 export const NavbarHiddenContext = React.createContext({
   navbarHidden: true,
   setNavbarHidden: (isHidden) => {}

@@ -1,50 +1,3 @@
-
-@keyframes popIn {
-    0% {
-      transform: scale(0);
-    }
-    50% {
-        /* This helps the items render while not being visible to prevent "pop-in" */
-        transform: scale(0.001);
-    }
-    100% {
-      transform: scale(1);
-    }
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-body {
-    font-size: 24px;
-    color:white;
-    text-shadow: .1em .1em .2em black;
-    background-color: #000;
-
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-
-    /* buggy right now
-    animation: 1s ease-in-out 0s 1 popIn;
-    */
-}
-
-a:link,
-a:visited {
-    color: #FFF;
-}
-a:hover,
-a:active {
-    color: #dfcbff;
-}
-
 .home {
     background: url("../img/bg-main.jpg");
     background-size: cover;
@@ -62,18 +15,6 @@ a:active {
     box-shadow: inset 0 0 5em 3em #000123;
 }
 
-.content, .content:before {
-    display: inline-flex;
-    position: fixed;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.animation-wrapper {
-    animation: .75s ease-out 0s 1 fadeIn;
-}
 
 /* 3D Transform CSS: https://polypane.app/css-3d-transform-examples/ */
 #me {
@@ -82,11 +23,6 @@ a:active {
     text-align: center;
     font-size: .9em;
     margin-top: 2em;
-}
-
-.avatar {
-    border-radius: 100%;
-    box-shadow: .1em .1em .5em 0 #000;
 }
 
 /*

@@ -1,4 +1,5 @@
 import Photo from '../img/photo.jpg'
+import './css/avatar.css'
 
 export function Avatar({size = 5 }) {
     const borderSize = (size * .06).toFixed(3);
