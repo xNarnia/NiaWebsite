@@ -1,6 +1,7 @@
 import NavbarRoute from './templates/NavbarRoute';
+import bg from '../img/bg-resume.png'
 
-const Resume = () => <NavbarRoute Element={
+const Resume = () => <NavbarRoute BackgroundImage={bg} Element={
   <>Resume</>
 } />
 

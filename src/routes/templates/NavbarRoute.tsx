@@ -4,15 +4,18 @@ import React, { FC } from 'react';
 
 interface NavbarRouteProp {
   Element: JSX.Element;
+  BackgroundImage?: string;
 }
 
-const NavbarRoute: FC<NavbarRouteProp> = ({ Element }) => {
+const NavbarRoute: FC<NavbarRouteProp> = ({ Element, BackgroundImage }) => {
   const { navbarHidden, setNavbarHidden } = useContext(NavbarHiddenContext);
   setNavbarHidden(false);
 
   return (
     <>
-      {Element}
+      <div className="page" style={{backgroundImage: `url(${BackgroundImage})`}}>
+        {Element}
+      </div>
     </>
   );
 };

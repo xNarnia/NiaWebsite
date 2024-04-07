@@ -39,9 +39,7 @@ function Root() {
               classNames="page"
               unmountOnExit
             >
-              <div className="page">
                 {currentOutlet}
-              </div>
             </CSSTransition>
           </SwitchTransition>
         </Container>
