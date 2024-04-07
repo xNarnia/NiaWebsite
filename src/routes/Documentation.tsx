@@ -1,5 +1,5 @@
 import NavbarRoute from './templates/NavbarRoute';
-import bg from '../img/bg-documentation.png'
+import bg from '../img/bg-documentation.jpg'
 
 const Documentation = () => <NavbarRoute BackgroundImage={bg} Element={
   <>Documentation</>

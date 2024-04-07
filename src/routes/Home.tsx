@@ -1,5 +1,4 @@
 import { Shard, ShardSpacer } from '../components/shard';
-import Photo from '../img/photo.jpg'
 import '../css/particles.css'
 import '../css/Home.css'
 import { NavbarHiddenContext } from '../app';
