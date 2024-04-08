@@ -1,7 +1,6 @@
 import { Component, useContext } from "react"
 import { NavbarHiddenContext } from "../../app"
-import React, { FC } from 'react';
-import { findDOMNode } from "react-dom";
+import { FC } from 'react';
 
 interface NavbarRouteProp {
   Element: JSX.Element;
