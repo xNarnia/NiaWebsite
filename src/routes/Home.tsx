@@ -1,6 +1,6 @@
 import { Shard, ShardSpacer } from '../components/shard';
 import '../css/particles.css'
-import '../css/Home.css'
+import '../css/page_home.css'
 import { NavbarHiddenContext } from '../app';
 import { useContext } from 'react';
 import { Avatar } from '../components/avatar';
