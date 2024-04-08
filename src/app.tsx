@@ -24,15 +24,25 @@ export const NavbarHiddenContext = React.createContext({
   setNavbarHidden: (isHidden) => {}
 });
 
+export const NavbarTitleContext = React.createContext({
+  navbarTitle: "",
+  setNavbarTitle: (title) => {}
+});
+
 const App = () => {
   const [navbarHidden, setNavbarHidden] = useState(true);
-  const value = { navbarHidden, setNavbarHidden };
+  const hiddenValue = { navbarHidden, setNavbarHidden };
+  
+  const [navbarTitle, setNavbarTitle] = useState("");
+  const titleValue = { navbarTitle, setNavbarTitle };
 
   return (
     <>
       <React.StrictMode>
-        <NavbarHiddenContext.Provider value={value}>
-          <RouterProvider router={router} />
+        <NavbarHiddenContext.Provider value={hiddenValue}>
+          <NavbarTitleContext.Provider value={titleValue}>
+            <RouterProvider router={router} />
+          </NavbarTitleContext.Provider>
         </NavbarHiddenContext.Provider>
       </React.StrictMode>
     </>
