@@ -104,7 +104,7 @@ button:focus-visible {
   height: 100%;
   width: 100%;
 
-  padding-top: 3.5em;
+  padding-top: 4em;
   
   background-size: cover;
   background-position: center;
@@ -142,6 +142,17 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+@media (max-width : 620px ) {
+  body {
+    font-size: 18px !important;
+  }
+
+  .page {
+    padding-top: 4.5em;
   }
 }
 
