@@ -69,29 +69,6 @@
   filter: drop-shadow( .2em .1em .1em rgba(0, 0, 0, .9));
 }
 
-
-/* 
-  Gets rid of a twitchy bug related to how the "collapse" feature 
-  of the Bootstrap Navbar works when not in mobile
-*/
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse{ 
-    display: flex !important;
-  }
-  
-  .navbar-collapse{
-    transition: none;
-    transition-property: none;
-  }
-
-  .navbar-collapse.collapsing {
-    height: auto !important;
-    transition: none;
-    transition-property: none;
-    overflow: visible;
-  }
-}
-
 @media (max-width: 992px) {
     .navbarContainer {
         width:100%;
@@ -111,10 +88,11 @@
     .navbar-collapse {
       position: absolute;
       display: inline-flex;
-      max-width: 20em;
+      max-width: 14em;
 
-      padding-top: 1em;
-      top: 4em;
+      padding-top: .7em;
+      padding-bottom: .7em;
+      top: 5.5rem;
 
       -webkit-box-shadow: inset 0 0 1em 0.25em rgba(0,0,0,0.75);
       -moz-box-shadow: inset 0 0 1em 0.25em rgba(0,0,0,0.75);
@@ -124,14 +102,15 @@
       border-radius: 1em;
       
       opacity: 1;
-      transition: opacity .2s ease-out !important;
+      transition: .3s ease-out !important;
+      transition-property: opacity, height !important;
     }
     
     .navbar-collapse.collapsing {
       opacity: 0;
       overflow: hidden;
-      transition: .2s ease-out !important;
-      transition-property: opacity !important;
+      transition: .01s ease-out !important;
+      transition-property: opacity, height !important;
     }
 
     .navbar-collapse-container {
@@ -140,22 +119,22 @@
       justify-content: end;
     }
     
-    .navbar-nav{
+    .navbar-nav {
       display: inline !important;
       flex-direction: row;
     }
 
-    .nav-link{
+    .nav-link {
       display: inline-block;
-      height:5em;
+      height:4em;
       width: 33%;
       text-align: center;
-      font-size: .75em;
+      font-size: .7em;
 
       margin: 0 0 2em 0;
     }
 
-    .navbar svg{
+    .navbar svg {
       height: 3em;
       width: 3em;
     }
