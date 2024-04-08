@@ -69,29 +69,6 @@
   filter: drop-shadow( .2em .1em .1em rgba(0, 0, 0, .9));
 }
 
-
-/* 
-  Gets rid of a twitchy bug related to how the "collapse" feature 
-  of the Bootstrap Navbar works when not in mobile
-*/
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse{ 
-    display: flex !important;
-  }
-  
-  .navbar-collapse{
-    transition: none;
-    transition-property: none;
-  }
-
-  .navbar-collapse.collapsing {
-    height: auto !important;
-    transition: none;
-    transition-property: none;
-    overflow: visible;
-  }
-}
-
 @media (max-width: 992px) {
     .navbarContainer {
         width:100%;
@@ -124,14 +101,15 @@
       border-radius: 1em;
       
       opacity: 1;
-      transition: opacity .2s ease-out !important;
+      transition: .3s ease-out !important;
+      transition-property: opacity, height !important;
     }
     
     .navbar-collapse.collapsing {
       opacity: 0;
       overflow: hidden;
-      transition: .2s ease-out !important;
-      transition-property: opacity !important;
+      transition: .01s ease-out !important;
+      transition-property: opacity, height !important;
     }
 
     .navbar-collapse-container {

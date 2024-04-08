@@ -2,7 +2,7 @@ import { Container, Nav, Navbar } from "react-bootstrap"
 import { Link, useLocation, useOutlet, useOutletContext } from "react-router-dom"
 import { SwitchTransition, CSSTransition } from "react-transition-group"
 import { routes } from "../router"
-import { useContext, useState } from "react"
+import React, { useContext, useRef, useState } from "react"
 import { NavbarTitleContext, NavbarHiddenContext } from "../app"
 import config from "../appconfig.json"
 import { Avatar } from "../components/avatar"
@@ -14,11 +14,6 @@ function Root() {
     const { navbarTitle, setNavbarTitle } = useContext(NavbarTitleContext);
     setNavbarHidden(true);
     
-    const [expanded, setExpanded] = useState(false);
-
-    const handleNavbarToggle = () => {
-      setExpanded(!expanded);
-    };
     const setTitle = () => {
       var pathArray = location.pathname.split("/");
       setNavbarTitle(pathArray[pathArray.length - 1]);
@@ -26,17 +21,17 @@ function Root() {
 
     return (
       <>
-        <Navbar expanded={expanded} expand="lg" className="bg-body-tertiary center" style={{ display: navbarHidden ? 'none': '' }}>
+        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary center" style={{ display: navbarHidden ? 'none': '' }}>
           <Container className="navbarContainer">
             <Navbar.Brand><Avatar size={3} /></Navbar.Brand>
             <Navbar.Text id="routeTitle" className="d-lg-none">{navbarTitle}</Navbar.Text>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleNavbarToggle}/>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Container className="navbar-collapse-container">
               <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
                   {
                     routes.map(route => (
-                      <Nav.Link onClick={handleNavbarToggle} key={route.name} as={Link} to={config.baseUrl + route.path}>{route.icon}{route.name}</Nav.Link>
+                      <Nav.Link key={route.name} as={Link} href={config.baseUrl + route.path} to={config.baseUrl + route.path}>{route.icon}{route.name}</Nav.Link>
                     ))
                   }
                   </Nav>
