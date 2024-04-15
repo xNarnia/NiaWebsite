@@ -72,10 +72,19 @@ const Portfolio = () => <NavbarRoute BackgroundImage={bg} Element={
           <h1>Feature-rich, Powerful Bots</h1>
           <ul>
             <li>Ribombot - User Profile & Engagement Bot</li>
-            <li>Tyrantron - Server Auto-Moderation Bot</li>
-            <li>Quilt + Kin - NFT Portfolio Image Generator</li>
-            <li>Ambibot - Discord Chat-based Game Bot</li>
-            <li>Delibot - Tradable "Present" Generator for Game Key Codes</li>
+            <li>Tyrantron - Configurable, custom bot built to auto-moderate 
+              a text community based on configurable filters. Also added custom 
+              security features for my own community which required special needs.</li>
+            <li>Quilt + Kin - NFT Portfolio Image Generator bot. Able to access the 
+              blockchain for a collection, cache collections image + metadata assets. 
+              Users can generate collages of their NFT portfolios, or of specific 
+              matches on data that matches the metadata of an NFT.</li>
+            <li>Ambibot - Text-based chat channel engine for creating custom games 
+              where community members can participate together. Generic party 
+              recruitment system, lobby organizer, and simplified menu system.</li>
+            <li>Delibot - "Tradable present" generator that allowed users to disguise 
+              redeemable game codes as text-based presents with descriptive 
+              identifiers hinting at what's inside the gift</li>
           </ul>
         </StyledCol>
         <StyledCol lg={6}>
