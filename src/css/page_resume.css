@@ -1,0 +1,11 @@
+.resume .col-content {
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 1em;
+}
+
+.resume img {
+    height: auto;
+    width: auto;
+}
