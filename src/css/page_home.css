@@ -34,6 +34,8 @@
         position: absolute;
         top: 2em;
         margin-top: 0;
+
+        font-size: 1.25em;
     }
 
     .content {
