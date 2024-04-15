@@ -80,25 +80,43 @@ const Portfolio = () => <NavbarRoute BackgroundImage={bg} Element={
         </StyledCol>
         <StyledCol lg={6}>
           <h1>Collaborative, Open-source Enthusiast</h1>
-          Discord with bounty system, open-source repos, & more
+          11 public repos created from scratch, developing openly with 
+          the pursuit of letting people learn and benefitting of my own 
+          learning through received constructive criticism.
+          Developed developer engagement process called code bounties. 
+          Development opportunities any community member could contribute 
+          with and earn some credit on leaderboards for various in-house rewards.
         </StyledCol>
         <StyledCol lg={6}>
           <h1>3D Modeling & Sculpting</h1>
-          Images of 3D works here, Nomad Sculpt, Blender, 
-          Autodesk 3DS Max, Unreal Engine
+          Experience working with 3D models in Unreal Engine & Blender.
+          Amateur sculpting with Nomad Sculpt. 
+          Rendering techniques in UE5 and Blender.
         </StyledCol>
         <StyledCol lg={6}>
           <h1>Livestreaming & Multimedia Editing</h1>
-          Twitch, Davinci Resolve, Adobe Premeire Pro
+          Experience broadcasting on Twitch & YouTube with OBS, saving 
+          VoDs, and creating an engaged web community through clips, 
+          videos, and get together nights. Adobe Premiere Pro and 
+          AfterEffects for video manipulation.
         </StyledCol>
         <StyledCol lg={6}>
           <h1>Robotics Team Leader & Engineer</h1>
           FIRST Robotics Competition President. 
-          Software Engineering, CAD, Electrical Engineering
+          FIRST™️ Robotics President helping build robots for FRC 
+          competitions, leading & motivating students to learn, and 
+          spending lots of time crunching to build large robots to 
+          accomplish very complicated goals.
         </StyledCol>
         <StyledCol lg={6}>
           <h1>Community Owner & Administrator</h1>
-          Discord server community manager of over 2,000 people, built from scratch.
+          Leader of several online web communities, my strongest being 
+          a web community with 2000+ members for the video game Pokémon. 
+          Event + competition organization, custom programmable systems 
+          for user engagement, reward + benefit system to attract, keep, 
+          and reward members for active + outstanding participation, 
+          administrator leading group of selected individuals to help 
+          with moderation, and more.
         </StyledCol>
       </Row>
     </Container>
