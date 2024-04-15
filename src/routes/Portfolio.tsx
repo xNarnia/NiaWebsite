@@ -60,13 +60,19 @@ const Portfolio = () => <NavbarRoute BackgroundImage={bg} Element={
           private server community engagement & administration.
           <br />
           <h2>Discord Bot Admin Panels & Moderation</h2>
-          User data management, moderation, administration setup/deployment, and administrator panels from the comfort of text channels in Discord to manage server communities and configure other deployed custom software
+          User data management, moderation, administration setup/deployment, 
+          and administrator panels from the comfort of text channels in 
+          Discord to manage server communities and configure other deployed 
+          custom software.
           <br />
           <h2>TerrariaChatRelay</h2>
-          Cross-compatible player message redirector for TShock & TModLoader. Built from the same base, providing compatibility for both using the Adapter pattern
+          Cross-compatible player message redirector for TShock & TModLoader.
+          Built from the same base, providing compatibility for both with 
+          careful choice of patterns and modeling.
           <br />
           <h2>Server Portals</h2>
-          Client-side game server redirector to allow seamless transfers from one private server to another.
+          Client-side game server redirector to allow seamless transfers from 
+          one private server to another.
         </StyledCol>
         <StyledCol lg={6}>
           <h1>Feature-rich, Powerful Bots</h1>
@@ -84,23 +90,41 @@ const Portfolio = () => <NavbarRoute BackgroundImage={bg} Element={
               recruitment system, lobby organizer, and simplified menu system.</li>
             <li>Delibot - "Tradable present" generator that allowed users to disguise 
               redeemable game codes as text-based presents with descriptive 
-              identifiers hinting at what's inside the gift</li>
+              identifiers hinting at what's inside the gift.</li>
           </ul>
         </StyledCol>
         <StyledCol lg={6}>
           <h1>Collaborative, Open-source Enthusiast</h1>
-          11 public repos created from scratch, developing openly with 
-          the pursuit of letting people learn and benefitting of my own 
-          learning through received constructive criticism.
-          Developed developer engagement process called code bounties. 
-          Development opportunities any community member could contribute 
-          with and earn some credit on leaderboards for various in-house rewards.
+          <ul>
+            <li>
+              11 public repos openly available with MIT & GPL-3 licenses.
+            </li>
+            <li>
+              Not afraid to develop openly, with purpose of teaching others and 
+              receiving constructive criticism for myself.
+            </li>
+            <li>
+              Developed developer engagement process called code bounties .
+            </li>
+            <li>
+              Development opportunity system where community member can contribute code
+              and earn credit to rise in leaderboards for various in-house rewards.
+            </li>
+          </ul>
         </StyledCol>
         <StyledCol lg={6}>
           <h1>3D Modeling & Sculpting</h1>
-          Experience working with 3D models in Unreal Engine & Blender.
-          Amateur sculpting with Nomad Sculpt. 
-          Rendering techniques in UE5 and Blender.
+          <ul>
+            <li>
+              Experience working with 3D models in Unreal Engine & Blender.
+            </li>
+            <li>
+              Amateur sculpting with Nomad Sculpt. 
+            </li>
+            <li>
+              Rendering techniques in UE5 and Blender.
+            </li>
+          </ul>
         </StyledCol>
         <StyledCol lg={6}>
           <h1>Livestreaming & Multimedia Editing</h1>
@@ -111,21 +135,36 @@ const Portfolio = () => <NavbarRoute BackgroundImage={bg} Element={
         </StyledCol>
         <StyledCol lg={6}>
           <h1>Robotics Team Leader & Engineer</h1>
-          FIRST Robotics Competition President. 
-          FIRST™️ Robotics President helping build robots for FRC 
-          competitions, leading & motivating students to learn, and 
-          spending lots of time crunching to build large robots to 
-          accomplish very complicated goals.
+          <ul>
+            <li>
+              FIRST Robotics Competition President. 
+            </li>
+            <li>
+              FIRST™️ Robotics President helping build robots for FRC competitions.
+            </li>
+            <li>
+              Leading & motivating students to learn.
+            </li>
+            <li>
+              Spending lots of time crunching to build large robots to 
+              accomplish very complicated goals.
+            </li>
+          </ul>
         </StyledCol>
         <StyledCol lg={6}>
           <h1>Community Owner & Administrator</h1>
-          Leader of several online web communities, my strongest being 
-          a web community with 2000+ members for the video game Pokémon. 
-          Event + competition organization, custom programmable systems 
-          for user engagement, reward + benefit system to attract, keep, 
-          and reward members for active + outstanding participation, 
-          administrator leading group of selected individuals to help 
-          with moderation, and more.
+          <ul>
+            <li>
+              Administrator & owner of large online web communities.
+              Created & nurtured web community with 2000+ members for the video game Pokémon.
+            </li>
+              Event + competition organization, custom programmable systems 
+              for user engagement, reward + benefit system to attract, keep, 
+              and reward members for active + outstanding participation.
+            <li>
+              Administrator leading group of selected individuals to help with moderation, and more.
+            </li>
+          </ul>
         </StyledCol>
       </Row>
     </Container>
