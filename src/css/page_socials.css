@@ -1,0 +1,12 @@
+.socials {
+    text-align: center;
+}
+.socials img {
+    height: 4em;
+    width: 4em;
+
+    padding: .5em;
+
+    -webkit-filter: drop-shadow( .2em .1em .1em rgba(0, 0, 0, .9));
+    filter: drop-shadow( .2em .1em .05em rgba(0, 0, 0, .9));
+}

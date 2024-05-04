@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import './css/shard.css'
+import '../css/component_shard.css'
 
 // Polygon Generator: https://bennettfeely.com/clippy/
 export function Shard({ label = "", linkTo = "", points = "", margin = 0}) {

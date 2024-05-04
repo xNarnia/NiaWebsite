@@ -1,4 +1,5 @@
 import { Col, ColProps } from "react-bootstrap";
+import "../../css/template_StyledCol.css"
 
 const StyledCol: React.FC<ColProps> = ({ ...props }) => {
     return (
