@@ -1,22 +1,4 @@
-.portfolio > .row>* {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: .5em;
-    border-radius: 1em;
-}
-
 .portfolio {
     font-size: .9em;
     font-weight: 300;
-}
-
-.portfolio .col-content {
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 1em;
-}
-
-.portfolio > .container {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
 }

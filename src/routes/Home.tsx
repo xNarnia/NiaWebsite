@@ -1,5 +1,5 @@
 import { Shard, ShardSpacer } from '../components/shard';
-import '../css/particles.css'
+import '../css/fx_particles.css'
 import '../css/page_home.css'
 import { NavbarHiddenContext } from '../app';
 import { useContext } from 'react';
@@ -26,7 +26,7 @@ function Home() {
                 <Shard linkTo='Portfolio' margin={-4}
                         points='65% 10%, 94% 25%, 98% 95%, 39% 90%, 17% 53%, 6% 0, 35% 3%' />
                         
-                <Shard linkTo='Resume'
+                <Shard linkTo='Skills'
                         points='44% 0, 75% 13%, 100% 27%, 89% 73%, 65% 89%, 31% 99%, 0 66%, 16% 11%' />
                         
                 <Shard linkTo='Github' margin={-4}
@@ -34,7 +34,7 @@ function Home() {
 
                 <ShardSpacer height={8}/>
 
-                <Shard linkTo='Documentation'
+                <Shard linkTo='Bots'
                         points='57% 4%, 73% 17%, 97% 29%, 83% 76%, 52% 97%, 3% 99%, 9% 39%, 28% 13%' />
                         
                 <Shard linkTo='Socials' margin={-4}

@@ -2,17 +2,25 @@
 import { createBrowserRouter } from "react-router-dom";
 import Page404 from './routes/404.tsx';
 import Home from './routes/Home.tsx'
-import Resume from './routes/Resume.tsx';
+import Bots from './routes/Bots.tsx';
 import Portfolio from './routes/Portfolio.tsx'
 import Github from "./routes/Github.tsx";
-import Documentation from "./routes/Documentation.tsx";
+import Skills from "./routes/Skills.tsx";
 import Socials from "./routes/Socials.tsx";
 import About from "./routes/About.tsx";
 import Root from "./routes/Root.tsx";
 import config from "./appconfig.json"
 import * as Icons from 'react-bootstrap-icons'
 
-export const routes = [
+interface PageRoute {
+  name: string,
+  path: string,
+  icon: JSX.Element,
+  element: JSX.Element,
+  errorElement: JSX.Element
+}
+
+export const routes:Array<PageRoute> = [
   {
     name: "Home",
     path: '/',
@@ -28,10 +36,10 @@ export const routes = [
     errorElement: <Page404 />
   },
   {
-    name: "Resume",
-    path: '/Resume',
-    icon: <Icons.JournalText />,
-    element: <Resume />,
+    name: "Skills",
+    path: '/Skills',
+    icon: <Icons.ArchiveFill />,
+    element: <Skills />,
     errorElement: <Page404 />
   },
   {
@@ -42,10 +50,10 @@ export const routes = [
     errorElement: <Page404 />
   },
   {
-    name: "Docs",
-    path: '/Documentation',
-    icon: <Icons.ArchiveFill />,
-    element: <Documentation />,
+    name: "Bots",
+    path: '/Bots',
+    icon: <Icons.GearFill />,
+    element: <Bots />,
     errorElement: <Page404 />
   },
   {
