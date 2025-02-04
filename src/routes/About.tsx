@@ -10,7 +10,7 @@ const About = () => <NavbarRoute BackgroundImage={bg} Element={
         <Col lg={3}>
         </Col>
         <StyledCol lg={6} >
-          Soon, there will be more to learn.
+          If you're interested in learning more about me, please reach out and let's connect!
         </StyledCol>
         <Col lg={3}>
         </Col>
